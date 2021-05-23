@@ -1,0 +1,12 @@
+language: cpp
+compiler:
+  - clang
+before_script:
+  - mkdir ../build
+  - cd ../build
+script:
+  - cmake ../Hash
+  - make -j
+  - ./LabTest/LabTest
+notifications:
+  email: false
